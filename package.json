@@ -8,8 +8,10 @@
     "devStart": "nodemon -q src/server.js"
   },
   "dependencies": {
+    "env2": "^2.2.0",
     "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
+    "pg": "^7.2.0",
     "serve-favicon": "^2.4.3"
   },
   "devDependencies": {
