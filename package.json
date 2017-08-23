@@ -4,8 +4,8 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-     "start": "node src/server.js",
-    "start:watch": "nodemon -q src/server.js"
+    "start": "node src/server.js",
+    "devStart": "nodemon -q src/server.js"
   },
   "dependencies": {
     "express": "^4.15.3",
