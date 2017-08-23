@@ -1,3 +1,24 @@
+* {
+   margin: 0;
+   padding: 0;
+   
+
+}
+
+.header {
+   width: 100%;
+   height: 50vh;
+
+background-image: url('https://images.unsplash.com/photo-1484542603127-984f4f7d14cb?dpr=2&auto=format&fit=crop&w=1500&h=902&q=80&cs=tinysrgb&crop=');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+
 .logo {
-   width: 2rem;
+   margin: 0 auto;
+   width: 20rem;
+   height: 10rem;
 }
