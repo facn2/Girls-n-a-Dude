@@ -1,1 +1,22 @@
-<h1>Homepage body</h1>
+{{# each members }}
+   <div class="row">
+      {{# each this }}
+         <div class="profile">
+            <div class="thumbnail">
+               <img src="{{this.image}}" class="img-responsive">
+               <div class="name">
+                  <h4>{{this.first_name}}</h4>
+                  <h4>{{this.last_name}}</h4>
+
+                  <p class="github">{{this.github}}</p>
+
+                     <a href="#" class="btn btn-success pull-right" role="button">view more</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      {{/each}}
+   </div>
+{{/each}}
+
+<h1>Is this working?</h1>
