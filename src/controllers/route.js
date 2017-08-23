@@ -5,7 +5,7 @@ const router = express.Router();
 const home = require('../views/home');
 
 router.get('/', (req, res) => {
-   res.render('home', { activePage: {home: true}});
+   res.render('home');
 });
 
 // This is going to be our user profile route
