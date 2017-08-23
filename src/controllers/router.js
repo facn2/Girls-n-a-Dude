@@ -7,17 +7,14 @@ const home = require('../views/home');
 router.get('/', (req, res) => {
   getProfiles((err, res) => {
     if (err) {
-  		response.writeHead(500, 'Content-Type:text/html');
-  		response.end('<h1>Sorry, there was a problem getting the data</h1>');
+  		res.send('<h1>Sorry, there was a problem getting the data</h1>');
   	  console.log("err", err);
   	} else {
   		const data = JSON.stringify(res);
-  		response.writeHead(200, 'Content-Type:application/json');
       console.log("data", data);
-  		response.end(data);
+      res.render('home', {members: data});
   	}
   })
-   res.render('home');
 });
 
 // user profile route
