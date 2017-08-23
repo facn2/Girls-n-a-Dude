@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const router = express.Router();
+
 const getProfiles = require('../queries/getProfiles.js');
 const home = require('../views/home');
 
@@ -22,5 +23,16 @@ router.get('/', (req, res) => {
 // router.get('/profile', (req, res) => {
 //
 // });
+
+
+
+// This is going to be our user profile route
+
+// router.get('/', (req, res) => {
+//    res.render('home', { activePage: {home: true}});
+// });
+
+
+
 
 module.exports = router;
