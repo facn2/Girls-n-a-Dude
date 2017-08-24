@@ -1,6 +1,5 @@
-{{# each members }}
+{{#each data}}
    <div class="row">
-      {{# each this }}
          <div class="profile">
             <div class="thumbnail">
                <img src="{{this.image}}" class="img-responsive">
@@ -15,8 +14,4 @@
                </div>
             </div>
          </div>
-      {{/each}}
-   </div>
 {{/each}}
-
-<h1>Is this working?</h1>
